@@ -13,13 +13,13 @@ html, body{
 
 header {
     width: 80%;
-    height: 95vh;
+    height: 100vh;
     /* border: 1px solid #000; */
     margin: auto;
 }
 header nav {
     width: 95%;
-    height: 7%;
+    height: 10%;
     /* border: 1px solid #000; */
     margin: auto;
     display: flex;
@@ -46,10 +46,21 @@ header nav ul li a{
     color: #121213;
     font-size: 13px;
     font-weight: 500;
-    transition: .3s linear;
+    
 }
-header nav ul li a:hover{
-    color: gray;
+
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 15px;
+    transition: .3s linear;
+    
+}
+
+header>nav>ul>.btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border: 2px solid #000;
 }
 
 header nav .bi-three-dots {
@@ -100,8 +111,9 @@ header .content .cont_bx button{
     transition: .3s linear;
 }
 header .content .cont_bx button:hover{
-    background: rgb(113, 113, 113);
-    border: 2px solid rgb(113, 113, 113);
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
 }
 
 header .trip_bx {
@@ -116,20 +128,22 @@ header .trip_bx .search_bx{
     top: 0;
     left: 0;
     width: 60%;
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    border-radius: 5px;
+    background: #ffffff;
+    border-radius: 8px;
     box-shadow: 0px 10px 25px rgb(114, 114, 114);
     z-index: 1;
     padding: 10px 20px;
 }
 
 header .trip_bx .search_bx .card {
-    width: 200px;
+    position: relative;
+    width: 170px;
     height: 100%;
+    padding-bottom: 65px;
     /* border: 1px solid #000; */
 }
 header .trip_bx .search_bx .card h4{
@@ -151,6 +165,7 @@ header .trip_bx .search_bx .card input{
     font-size: 13px;
 }
 header .trip_bx .search_bx input[type="button"]{
+    position: relative;
     background: #000;
     color: #fff;
     border: none;
@@ -161,7 +176,9 @@ header .trip_bx .search_bx input[type="button"]{
     cursor: pointer;
 }
 header .trip_bx .search_bx input[type="button"]:hover{
-   background: gray;
+   background: rgb(255, 255, 255);
+   color: #000;
+   border: #000 solid 1px;
 }
 
 header .trip_bx .travel_bx {
@@ -169,7 +186,7 @@ header .trip_bx .travel_bx {
     width: 100%;
     height: auto;
     margin: auto;
-    top: 30px;
+    top: 50px;
     /* background: #000; */
     /* border: 1px solid #000; */
     border-radius: 10px;
@@ -236,7 +253,9 @@ header .trip_bx .travel_bx .cards .card .btn_city a{
    transition: .3s linear;
 }
 header .trip_bx .travel_bx .cards .card .btn_city a:hover{
-   background: gray;
+   background: #f5f5f5;
+   color: #000;
+   border: 1px solid #000;
 }
 header .trip_bx .travel_bx .cards .card .btn_city h5{
    font-size: 11px;
@@ -289,7 +308,8 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span{
 .offers .cards .card h3 {
     width: 140px;
     padding: 6px 0px;
-    background: rgb(165, 243, 165);
+    background: rgb(0, 0, 0);
+    color: #fff;
     border-radius: 20px;
     font-size: 12px;
     display: grid;
@@ -329,7 +349,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span{
     left: 0;
 }
 .offers .cards .card .cont_bx{
-    width: 99%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -446,8 +466,9 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span{
     transition: .3s linear;
 }
 .destination .des_bx button:hover {
-    background: gray;
-    border: 2px solid gray;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
 }
 
 .destination .img_bx img{
@@ -459,7 +480,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h5 span{
    position: absolute;
    top: 50%;
    left: -10%;
-   width: 160px;
+   width: 180px;
    height: 50px;
    background: #fff;
    box-shadow: 0px 5px 20px  gray;
@@ -548,7 +569,9 @@ footer .input button {
 }
 
 footer .input button:hover {
-    background: gray;
+    background: rgb(255, 255, 255);
+    color: #000;
+    border: #000 1px solid;
 }
 
 footer ul {
@@ -556,6 +579,7 @@ footer ul {
     display: flex;
     /* align-items: center; */
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 footer ul li {
@@ -572,6 +596,11 @@ footer ul li h6 {
     line-height: 18px;
     border-top: 1px solid #000;
     padding-top: 3px;
+}
+
+footer> .copyright{
+    margin-bottom: 30px;
+    font-weight: 300px;
 }
 
 
